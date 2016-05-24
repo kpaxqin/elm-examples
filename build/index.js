@@ -7192,7 +7192,7 @@ var _elm_lang$html$Html_Events$Options = F2(
 		return {stopPropagation: a, preventDefault: b};
 	});
 
-var _user$project$Counter$update = F2(
+var _kpaxqin$elm_examples$Counter$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		if (_p0.ctor === 'Increase') {
@@ -7201,14 +7201,14 @@ var _user$project$Counter$update = F2(
 			return model - 1;
 		}
 	});
-var _user$project$Counter$init = function (count) {
+var _kpaxqin$elm_examples$Counter$init = function (count) {
 	return count;
 };
-var _user$project$Counter$DoNot = {ctor: 'DoNot'};
-var _user$project$Counter$Do = {ctor: 'Do'};
-var _user$project$Counter$Decrease = {ctor: 'Decrease'};
-var _user$project$Counter$Increase = {ctor: 'Increase'};
-var _user$project$Counter$view = function (model) {
+var _kpaxqin$elm_examples$Counter$DoNot = {ctor: 'DoNot'};
+var _kpaxqin$elm_examples$Counter$Do = {ctor: 'Do'};
+var _kpaxqin$elm_examples$Counter$Decrease = {ctor: 'Decrease'};
+var _kpaxqin$elm_examples$Counter$Increase = {ctor: 'Increase'};
+var _kpaxqin$elm_examples$Counter$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		_elm_lang$core$Native_List.fromArray(
@@ -7219,7 +7219,7 @@ var _user$project$Counter$view = function (model) {
 				_elm_lang$html$Html$button,
 				_elm_lang$core$Native_List.fromArray(
 					[
-						_elm_lang$html$Html_Events$onClick(_user$project$Counter$Decrease)
+						_elm_lang$html$Html_Events$onClick(_kpaxqin$elm_examples$Counter$Decrease)
 					]),
 				_elm_lang$core$Native_List.fromArray(
 					[
@@ -7231,7 +7231,7 @@ var _user$project$Counter$view = function (model) {
 				_elm_lang$html$Html$button,
 				_elm_lang$core$Native_List.fromArray(
 					[
-						_elm_lang$html$Html_Events$onClick(_user$project$Counter$Increase)
+						_elm_lang$html$Html_Events$onClick(_kpaxqin$elm_examples$Counter$Increase)
 					]),
 				_elm_lang$core$Native_List.fromArray(
 					[
@@ -7240,15 +7240,15 @@ var _user$project$Counter$view = function (model) {
 			]));
 };
 
-var _user$project$CounterList$updateCounter = F3(
+var _kpaxqin$elm_examples$CounterList$updateCounter = F3(
 	function (id, msg, counter) {
 		return _elm_lang$core$Native_Utils.eq(counter.id, id) ? _elm_lang$core$Native_Utils.update(
 			counter,
 			{
-				model: A2(_user$project$Counter$update, msg, counter.model)
+				model: A2(_kpaxqin$elm_examples$Counter$update, msg, counter.model)
 			}) : counter;
 	});
-var _user$project$CounterList$update = F2(
+var _kpaxqin$elm_examples$CounterList$update = F2(
 	function (msg, _p0) {
 		var _p1 = _p0;
 		var _p4 = _p1;
@@ -7276,36 +7276,36 @@ var _user$project$CounterList$update = F2(
 					{
 						counters: A2(
 							_elm_lang$core$List$map,
-							A2(_user$project$CounterList$updateCounter, _p2._0, _p2._1),
+							A2(_kpaxqin$elm_examples$CounterList$updateCounter, _p2._0, _p2._1),
 							_p3)
 					});
 		}
 	});
-var _user$project$CounterList$IndexedCounter = F2(
+var _kpaxqin$elm_examples$CounterList$IndexedCounter = F2(
 	function (a, b) {
 		return {id: a, model: b};
 	});
-var _user$project$CounterList$Model = F2(
+var _kpaxqin$elm_examples$CounterList$Model = F2(
 	function (a, b) {
 		return {uid: a, counters: b};
 	});
-var _user$project$CounterList$Counter = {ctor: 'Counter'};
-var _user$project$CounterList$Modify = F2(
+var _kpaxqin$elm_examples$CounterList$Counter = {ctor: 'Counter'};
+var _kpaxqin$elm_examples$CounterList$Modify = F2(
 	function (a, b) {
 		return {ctor: 'Modify', _0: a, _1: b};
 	});
-var _user$project$CounterList$showCounter = function (_p5) {
+var _kpaxqin$elm_examples$CounterList$showCounter = function (_p5) {
 	var _p6 = _p5;
 	return A2(
 		_elm_lang$html$Html_App$map,
 		function (msg) {
-			return A2(_user$project$CounterList$Modify, _p6.id, msg);
+			return A2(_kpaxqin$elm_examples$CounterList$Modify, _p6.id, msg);
 		},
-		_user$project$Counter$view(_p6.model));
+		_kpaxqin$elm_examples$Counter$view(_p6.model));
 };
-var _user$project$CounterList$Remove = {ctor: 'Remove'};
-var _user$project$CounterList$Insert = {ctor: 'Insert'};
-var _user$project$CounterList$view = function (_p7) {
+var _kpaxqin$elm_examples$CounterList$Remove = {ctor: 'Remove'};
+var _kpaxqin$elm_examples$CounterList$Insert = {ctor: 'Insert'};
+var _kpaxqin$elm_examples$CounterList$view = function (_p7) {
 	var _p8 = _p7;
 	return A2(
 		_elm_lang$html$Html$div,
@@ -7317,7 +7317,7 @@ var _user$project$CounterList$view = function (_p7) {
 				_elm_lang$html$Html$button,
 				_elm_lang$core$Native_List.fromArray(
 					[
-						_elm_lang$html$Html_Events$onClick(_user$project$CounterList$Insert)
+						_elm_lang$html$Html_Events$onClick(_kpaxqin$elm_examples$CounterList$Insert)
 					]),
 				_elm_lang$core$Native_List.fromArray(
 					[
@@ -7327,7 +7327,7 @@ var _user$project$CounterList$view = function (_p7) {
 				_elm_lang$html$Html$button,
 				_elm_lang$core$Native_List.fromArray(
 					[
-						_elm_lang$html$Html_Events$onClick(_user$project$CounterList$Remove)
+						_elm_lang$html$Html_Events$onClick(_kpaxqin$elm_examples$CounterList$Remove)
 					]),
 				_elm_lang$core$Native_List.fromArray(
 					[
@@ -7337,61 +7337,61 @@ var _user$project$CounterList$view = function (_p7) {
 				_elm_lang$html$Html$div,
 				_elm_lang$core$Native_List.fromArray(
 					[]),
-				A2(_elm_lang$core$List$map, _user$project$CounterList$showCounter, _p8.counters))
+				A2(_elm_lang$core$List$map, _kpaxqin$elm_examples$CounterList$showCounter, _p8.counters))
 			]));
 };
 
-var _user$project$Index$initCounterList = {
+var _kpaxqin$elm_examples$Index$initCounterList = {
 	uid: 0,
 	counters: _elm_lang$core$Native_List.fromArray(
 		[
 			{id: 0, model: 2}
 		])
 };
-var _user$project$Index$update = F2(
+var _kpaxqin$elm_examples$Index$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		if (_p0.ctor === 'CounterListMsg') {
 			return _elm_lang$core$Native_Utils.update(
 				model,
 				{
-					counterList: A2(_user$project$CounterList$update, _p0._0, model.counterList)
+					counterList: A2(_kpaxqin$elm_examples$CounterList$update, _p0._0, model.counterList)
 				});
 		} else {
 			return _elm_lang$core$Native_Utils.update(
 				model,
 				{
-					counter: A2(_user$project$Counter$update, _p0._0, model.counter)
+					counter: A2(_kpaxqin$elm_examples$Counter$update, _p0._0, model.counter)
 				});
 		}
 	});
-var _user$project$Index$Model = F2(
+var _kpaxqin$elm_examples$Index$Model = F2(
 	function (a, b) {
 		return {counter: a, counterList: b};
 	});
-var _user$project$Index$CounterListMsg = function (a) {
+var _kpaxqin$elm_examples$Index$CounterListMsg = function (a) {
 	return {ctor: 'CounterListMsg', _0: a};
 };
-var _user$project$Index$showCounterList = function (model) {
+var _kpaxqin$elm_examples$Index$showCounterList = function (model) {
 	return A2(
 		_elm_lang$html$Html_App$map,
 		function (msg) {
-			return _user$project$Index$CounterListMsg(msg);
+			return _kpaxqin$elm_examples$Index$CounterListMsg(msg);
 		},
-		_user$project$CounterList$view(model.counterList));
+		_kpaxqin$elm_examples$CounterList$view(model.counterList));
 };
-var _user$project$Index$CounterMsg = function (a) {
+var _kpaxqin$elm_examples$Index$CounterMsg = function (a) {
 	return {ctor: 'CounterMsg', _0: a};
 };
-var _user$project$Index$showCounter = function (model) {
+var _kpaxqin$elm_examples$Index$showCounter = function (model) {
 	return A2(
 		_elm_lang$html$Html_App$map,
 		function (msg) {
-			return _user$project$Index$CounterMsg(msg);
+			return _kpaxqin$elm_examples$Index$CounterMsg(msg);
 		},
-		_user$project$Counter$view(model.counter));
+		_kpaxqin$elm_examples$Counter$view(model.counter));
 };
-var _user$project$Index$view = function (model) {
+var _kpaxqin$elm_examples$Index$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		_elm_lang$core$Native_List.fromArray(
@@ -7412,7 +7412,7 @@ var _user$project$Index$view = function (model) {
 							[
 								_elm_lang$html$Html$text('counterList')
 							])),
-						_user$project$Index$showCounterList(model)
+						_kpaxqin$elm_examples$Index$showCounterList(model)
 					])),
 				A2(
 				_elm_lang$html$Html$section,
@@ -7428,22 +7428,22 @@ var _user$project$Index$view = function (model) {
 							[
 								_elm_lang$html$Html$text('Counter')
 							])),
-						_user$project$Index$showCounter(model)
+						_kpaxqin$elm_examples$Index$showCounter(model)
 					]))
 			]));
 };
-var _user$project$Index$main = {
+var _kpaxqin$elm_examples$Index$main = {
 	main: _elm_lang$html$Html_App$beginnerProgram(
 		{
-			model: {counter: 1, counterList: _user$project$Index$initCounterList},
-			view: _user$project$Index$view,
-			update: _user$project$Index$update
+			model: {counter: 1, counterList: _kpaxqin$elm_examples$Index$initCounterList},
+			view: _kpaxqin$elm_examples$Index$view,
+			update: _kpaxqin$elm_examples$Index$update
 		})
 };
 
 var Elm = {};
 Elm['Index'] = Elm['Index'] || {};
-_elm_lang$core$Native_Platform.addPublicModule(Elm['Index'], 'Index', typeof _user$project$Index$main === 'undefined' ? null : _user$project$Index$main);
+_elm_lang$core$Native_Platform.addPublicModule(Elm['Index'], 'Index', typeof _kpaxqin$elm_examples$Index$main === 'undefined' ? null : _kpaxqin$elm_examples$Index$main);
 
 if (typeof define === "function" && define['amd'])
 {

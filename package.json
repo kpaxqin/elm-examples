@@ -1,0 +1,26 @@
+{
+  "name": "elm-examples",
+  "version": "1.0.0",
+  "description": "js/css/html resources for elm examples",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "elm-live index.elm --output=build/index.js --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpaxqin/elm-examples.git"
+  },
+  "keywords": [
+    "elm"
+  ],
+  "author": "kpaxqin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpaxqin/elm-examples/issues"
+  },
+  "homepage": "https://github.com/kpaxqin/elm-examples#readme",
+  "devDependencies": {
+    "elm-live": "^2.2.1"
+  }
+}

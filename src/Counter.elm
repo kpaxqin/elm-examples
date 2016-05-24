@@ -7,10 +7,7 @@ import Html.Events exposing (onClick)
 type alias Model = Int
 
 init : Int -> Model
-init count =
-  count
-
-type Counter = Do | DoNot
+init count = count
 
 --update
 type Msg = Increase | Decrease

@@ -11,8 +11,6 @@ type alias IndexedCounter =
 type alias Model =
   {uid: Int, counters: List IndexedCounter}
 
-type Counters = Counter
-
 --update
 type Msg =
   Insert
